@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+    --primary: #7331ff;
+    --primary-light: rgb(210, 115, 255);
+    --primary-tint: #eeeeff;
+
+    --secondary: #ebff00;
+}
+
+@theme inline {
+    --color-primary: var(--primary);
+    --color-primary-light: var(--primary-light);
+    --color-primary-tint: var(--primary-tint);
+
+    --color-secondary: var(--secondary);
+}
