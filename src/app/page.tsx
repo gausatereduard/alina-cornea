@@ -5,25 +5,24 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<>
-			<section className={"pt-8 pb-8 bg-gradient-to-br from-blue-200 to-pink-200"}>
+			<section className={"pt-8 pb-8 bg-gradient-to-br from-yellow-100 to-red-200"}>
 				<Container>
 					<div className={"mb-6"}>
 						<div className={"text-center"}>
-							<h1 className={"mb-4 text-2xl sm:text-3xl lg:text-4xl font-bold text-primary uppercase"}>
-								Dezghioc™ Manifest
+							<h1 className={"mb-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-primary uppercase"}>
+								GoldYes
 							</h1>
 						</div>
 						<div className={"text-center"}>
-							<h4 className={"text-lg sm:text-xl md:text-2xl uppercase font-bold"}>
-								Procesul din spatele unei<br/>
-								lansări care a generat peste<br/>
+							<h4 className={"text-lg sm:text-xl md:text-2xl uppercase font-bold text-balance"}>
+								Profesia de lux care îți aduce{" "}
 								<span className={"text-primary"}>
-									300.000 de euro în doar 3 luni.
+									venituri reale și respect!
 							</span>
 							</h4>
 						</div>
 					</div>
-					<div className={"flex items-center py-4"}>
+					<div className={"flex items-center justify-center py-4"}>
 						<div className={"relative shrink-0 w-[138px] h-[112px]"}>
 							<Image className={"absolute -top-3 left-0 w-auto object-cover h-[112px]"} src={"/assets/gift-hero.png"}
 										 alt={"gift hero"} width={138} height={112}/>
@@ -31,13 +30,9 @@ export default function Home() {
 										 alt={"book hero"} width={102} height={112}/>
 						</div>
 						<div className={"space-y-2"}>
-							<p className={"text-lg font-bold !leading-[1.2]"}>
-								Cadou garantat<br/>
-								după înscriere!
-							</p>
-							<p className={"text-sm !leading-[1.2]"}>
-								<span className={"text-base font-bold text-primary"}>Ghid gratuit:</span>{" "}
-								Cum să crești vizibilitatea în story-uri?
+							<p className={"text-lg font-bold !leading-[1.2] text-balance"}>
+								Locuri limitate –<br/>
+								aplică acum!
 							</p>
 						</div>
 					</div>
@@ -49,8 +44,8 @@ export default function Home() {
 										 alt={"person hero"} width={215} height={337}/>
 						</div>
 						<button
-							className={"h-20 md:text-xl w-full lg:w-72 py-4 bg-secondary rounded-full uppercase font-bold hover:bg-primary hover:text-white cursor-pointer transition-colors duration-300 ease-in-out"}>
-							Primește acces imediat
+							className={"h-16 md:text-xl w-full lg:w-72 py-4 bg-secondary rounded-full uppercase font-bold hover:bg-primary hover:text-white cursor-pointer transition-colors duration-300 ease-in-out"}>
+							Aplică acum
 						</button>
 					</div>
 				</Container>
@@ -61,10 +56,9 @@ export default function Home() {
 				<section>
 					<section className={"pt-10"}>
 						<Container>
-							<div className={"px-10 sm:px-0"}>
-								<h2 className={"font-bold text-center uppercase text-4xl md:text-5xl lg:text-6xl"}>
-									Ce vei afla
-									în video?
+							<div>
+								<h2 className={"text-balance font-bold text-center uppercase text-4xl md:text-5xl lg:text-6xl"}>
+									De ce să confecționezi bijuterii?
 								</h2>
 							</div>
 						</Container>
@@ -103,9 +97,7 @@ export default function Home() {
 														 alt={"list disc mark"} width={32} height={32}/>
 										</div>
 										<p>
-											Cum un produs educațional nou, dintr-o nișă nouă, a atins vânzări record în doar
-											3
-											luni
+											Pentru că este una dintre cele mai căutate și bine plătite profesii de lux.
 										</p>
 									</li>
 									<li className={"flex items-start space-x-4"}>
@@ -115,7 +107,7 @@ export default function Home() {
 														 alt={"list disc mark"} width={32} height={32}/>
 										</div>
 										<p>
-											Care au fost etapele cheie în strategia de vânzări
+											Pentru că bijutierii profesioniști sunt extrem de apreciați și rari pe piața din Moldova și nu numai.
 										</p>
 									</li>
 									<li className={"flex items-start space-x-4"}>
@@ -125,7 +117,7 @@ export default function Home() {
 														 alt={"list disc mark"} width={32} height={32}/>
 										</div>
 										<p>
-											Cât am investit în reclame, pe ce canale și care a fost rentabilitatea acestora
+											Pentru că poți transforma fiecare creație într-o sursă serioasă de venit, lucrând independent sau colaborând cu branduri de top.
 										</p>
 									</li>
 									<li className={"flex items-start space-x-4"}>
@@ -135,41 +127,7 @@ export default function Home() {
 														 alt={"list disc mark"} width={32} height={32}/>
 										</div>
 										<p>
-											Ce strategii de promovare sunt eficiente și care nu mai dau rezultate
-										</p>
-									</li>
-									<li className={"flex items-start space-x-4"}>
-										<div className={"pt-2 shrink-0"}>
-											<Image className={"w-8 h-8"}
-														 src={"/assets/list-disc-mark.png"}
-														 alt={"list disc mark"} width={32} height={32}/>
-										</div>
-										<p>
-											Care au fost greșelile majore care ne-au stopat din atingerea a 500.000 euro
-											încasări
-										</p>
-									</li>
-									<li className={"flex items-start space-x-4"}>
-										<div className={"pt-2 shrink-0"}>
-											<Image className={"w-8 h-8"}
-														 src={"/assets/list-disc-mark.png"}
-														 alt={"list disc mark"} width={32} height={32}/>
-										</div>
-										<p>
-											Cum am comunicat cu audiența pentru a-i determina să dorească să cumpere
-											produsul
-											înainte de
-											a fi anunțat (strategie de warm-up)
-										</p>
-									</li>
-									<li className={"flex items-start space-x-4"}>
-										<div className={"pt-2 shrink-0"}>
-											<Image className={"w-8 h-8"}
-														 src={"/assets/list-disc-mark.png"}
-														 alt={"list disc mark"} width={32} height={32}/>
-										</div>
-										<p>
-											Despre cifre, date, statistici, tabele - tot ce e ascuns de obicei:)
+											Pentru că poți deveni propriul tău șef, având libertatea să îți construiești atelierul și brandul personal.
 										</p>
 									</li>
 								</ul>
@@ -189,12 +147,10 @@ export default function Home() {
 											 alt={"heart"} width={80} height={80}/>
 								<div className={"space-y-4 pt-3"}>
 									<h3 className={"text-center text-3xl uppercase text-primary"}>
-										Și cel mai important
+										De ce GoldYes?
 									</h3>
-									<p className={"text-center"}>
-										Cum să aplici și TU această metodă pentru a lansa produsul tău educațional,
-										indiferent
-										de experiența pe care o ai.
+									<p className={"text-balance text-center"}>
+										Pentru că profesioniștii adevărați în bijuterie sunt puțini și extrem de căutați.
 									</p>
 								</div>
 							</div>
@@ -203,14 +159,14 @@ export default function Home() {
 				</section>
 			</section>
 
-			<section className={"bg-primary-tint overflow-x-clip overflow-y-visible pt-8"}>
+			<section className={"bg-primary-tint overflow-x-clip overflow-y-visible py-8"}>
 				{/* Va fi util pentru tine dacă */}
 				<section>
 					<section className={"text-center"}>
 						<Container>
-							<div className={"pb-6 pt-10 px-6"}>
-								<h3 className={"uppercase text-3xl md:text-4xl lg:text-5xl font-bold"}>
-									Va fi util pentru tine dacă
+							<div className={"pb-6 pt-10"}>
+								<h3 className={"text-balance uppercase text-3xl md:text-4xl lg:text-5xl font-bold"}>
+									Ce înveți la GoldYes:
 								</h3>
 							</div>
 						</Container>
@@ -227,7 +183,7 @@ export default function Home() {
 										</div>
 										<div>
 											<p className={"text-base sm:text-lg md:text-xl"}>
-												Ești expert, antreprenor sau creator și vrei să îți monetizezi expertiza online.
+												Confecționarea bijuteriilor din aur și argint de la zero, cu tehnici profesionale.
 											</p>
 										</div>
 									</li>
@@ -239,7 +195,7 @@ export default function Home() {
 										</div>
 										<div>
 											<p className={"text-base sm:text-lg md:text-xl"}>
-												Vrei să lansezi propriul produs educațional online (curs, consultare, coaching, training masterclass etc.)
+												Realizarea lanțurilor, inelelor, brățărilor și a lacătelor de bijuterii.
 											</p>
 										</div>
 									</li>
@@ -251,7 +207,7 @@ export default function Home() {
 										</div>
 										<div>
 											<p className={"text-base sm:text-lg md:text-xl"}>
-												Ești în căutarea unor strategii actuale în 2025 pentru a-ți crește veniturile.
+												Utilizarea echipamentelor moderne și a tehnologiilor actuale din domeniu.
 											</p>
 										</div>
 									</li>
@@ -263,7 +219,7 @@ export default function Home() {
 										</div>
 										<div>
 											<p className={"text-base sm:text-lg md:text-xl"}>
-												Ai nevoie de metode concrete pentru a atrage potențiali clienți și a crea oferte care vând cu efort minim din partea ta.
+												Tehnici de fotografiere și promovare a bijuteriilor pentru vânzări online și offline.
 											</p>
 										</div>
 									</li>
@@ -275,7 +231,7 @@ export default function Home() {
 										</div>
 										<div>
 											<p className={"text-base sm:text-lg md:text-xl"}>
-												Vrei să afli cum poți genera și tu bani din produse educaționale, chiar dacă nu ai mai făcut asta niciodată și ai zero experiență.
+												Cum să-ți lansezi propriul brand de bijuterii.
 											</p>
 										</div>
 									</li>
@@ -292,19 +248,19 @@ export default function Home() {
 							<div>
 								<div className={"text-center pt-4 px-6"}>
 									<h3 className={"text-2xl md:text-3xl lg:text-4xl font-medium text-white uppercase"}>
-										Dezghiocul lansării de
+										deveni bijutier profesionist în
 									</h3>
 								</div>
 								<div className={"text-center pt-2 pb-6"}>
 									<h2 className={"text-7xl lg:text-9xl font-bold text-white"}>
-										300K
+										3 luni
 									</h2>
 								</div>
 							</div>
 							<div className={"pb-4"}>
 								<button
-									className={"h-16 md:text-xl w-full lg:w-72 py-4 bg-[#ebff00] text-[#2d3034] rounded-full uppercase font-bold hover:bg-white cursor-pointer transition-colors duration-300 ease-in-out"}>
-									Primește materialul GRATUIT
+									className={"h-16 md:text-xl w-full lg:w-72 py-4 bg-white rounded-full uppercase font-bold hover:bg-secondary cursor-pointer transition-colors duration-300 ease-in-out"}>
+									Investești în viitorul
 								</button>
 							</div>
 						</div>
@@ -322,8 +278,7 @@ export default function Home() {
 							</div>
 							<div className={"pb-4 pt-2"}>
 								<h3 className={"uppercase text-5xl md:text-6xl lg:text-7xl"}>
-									ALINA<br />
-									ANDRIUȚĂ
+									Bijutieri profesioniști
 								</h3>
 							</div>
 						</Container>
@@ -332,36 +287,18 @@ export default function Home() {
 						<Container>
 							<ul className={"list-inside flex flex-col gap-y-3 list-disc md:text-lg lg:text-xl"}>
 								<li>
-							<span className={"font-bold text-primary-light"}>
-								142 K+
-							</span>{" "}
-									followeri
+									Lecții practice, aplicabile imediat.
 								</li>
-
 								<li>
-							<span className={"font-bold text-primary-light"}>
-								500 000 €
-							</span>{" "}
-									din vânzări de produse educaționale
+									Experiență reală de atelier.
 								</li>
-
 								<li>
-							<span className={"font-bold text-primary-light"}>
-								500 case-uri
-							</span>{" "}
-									de consultanță Sistem de Vânzări
-								</li>
-
-								<li>
-							<span className={"font-bold text-primary-light"}>
-								Expert
-							</span>{" "}
-									nr1 în monetizarea expertizei
+									Sprijin în lansarea carierei tale în bijuterie.
 								</li>
 							</ul>
 						</Container>
 					</section>
-					<section className={"pt-16"}>
+				{/*	<section className={"pt-16"}>
 						<Container>
 							<div className={"relative h-80 flex items-center justify-center"}>
 								<Image className={"absolute bottom-0 -left-10 object-contain h-auto"}
@@ -378,7 +315,7 @@ export default function Home() {
 											 alt={"instagram mockup"} width={203} height={311} />
 							</div>
 						</Container>
-					</section>
+					</section>*/}
 				</section>
 			</section>
 
@@ -387,8 +324,8 @@ export default function Home() {
 				<section className={"pt-16 pb-8"}>
 					<Container>
 						<div>
-							<h3 className={"font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-center"}>
-								De ce este specială această sesiune?
+							<h3 className={"text-balance font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase text-center"}>
+								Acest curs este pentru tine dacă:
 							</h3>
 						</div>
 					</Container>
@@ -407,7 +344,7 @@ export default function Home() {
 								</div>
 								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
 									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
-										Afli informații pe care nu le găsești nicăieri – direct din experiența mea.
+										Confecționarea bijuteriilor din aur și argint de la zero, cu tehnici profesionale.
 									</p>
 								</div>
 							</div>
@@ -423,7 +360,7 @@ export default function Home() {
 								</div>
 								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
 									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
-										Înveți ce canale și metode de promovare funcționează acum și care nu.
+										Realizarea lanțurilor, inelelor, brățărilor și a lacătelor de bijuterii.
 									</p>
 								</div>
 							</div>
@@ -439,7 +376,7 @@ export default function Home() {
 								</div>
 								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
 									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
-										Obții strategii clare pentru a-ți atinge misiunea și veniturile dorite.
+										Utilizarea echipamentelor moderne și a tehnologiilor actuale din domeniu.
 									</p>
 								</div>
 							</div>
@@ -455,8 +392,23 @@ export default function Home() {
 								</div>
 								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
 									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
-										Descoperi cum să eviți greșelile care te pot costa scump în lansarea propriului tău produs
-										educațional
+										Tehnici de fotografiere și promovare a bijuteriilor pentru vânzări online și offline.
+									</p>
+								</div>
+							</div>
+
+							<div className={"flex items-center gap-x-6 group"}>
+								<div className={"shrink-0 relative w-24 h-24 group-even:order-last"}>
+									<div
+										className={"absolute w-10 h-10 -top-3 group-odd:-right-3 group-even:-left-3 rounded-full flex items-center justify-center bg-primary border-4 border-white"}>
+										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>4</span>
+									</div>
+									<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-4.jpg"} alt={"step 4"}
+												 width={100} height={100} />
+								</div>
+								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
+									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
+										Cum să-ți lansezi propriul brand de bijuterii.
 									</p>
 								</div>
 							</div>
@@ -465,15 +417,14 @@ export default function Home() {
 				</section>
 				<section className={"pb-16 pt-8"}>
 					<Container>
-						<div className={"flex items-center justify-center gap-4"}>
+						<div className={"flex items-center justify-center gap-2"}>
 							<div className={"shrink-0 w-8 lg:w-10"}>
 								<Image className={"h-[85px] lg:h-24 object-contain"} src={"/assets/wing-left.png"} alt={"wing left"}
 											 width={32} height={85} />
 							</div>
 							<div>
-								<p className={"text-sm sm:text-base md:text-lg lg:text-3xl text-center font-medium uppercase"}>
-									Toate secretele pe care le vei afla sunt bazate pe exemple<br className={"hidden lg:block"} />{" "}
-									concrete și lecții învățate direct din practică
+								<p className={"text-sm sm:text-base md:text-lg lg:text-3xl text-center text-balance font-medium uppercase"}>
+									Completează ancheta de mai jos și lasă-ne numărul tău de telefon pentru a primi toate detaliile despre preț și înscriere!
 								</p>
 							</div>
 							<div className={"shrink-0 w-8 lg:w-10"}>
@@ -496,13 +447,13 @@ export default function Home() {
 						<div className={"flex flex-col justify-center text-center"}>
 							<div className={"pt-20 pb-6"}>
 								<h5
-									className={"text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold leading-none uppercase"}>
-									Vezi video cu un simplu click pe buton
+									className={"text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold text-balance uppercase"}>
+									E timpul să investești în viitorul tău!
 								</h5>
 							</div>
 							<div className={"pt-6 pb-20"}>
 								<button
-									className={"h-16 w-auto lg:w-72 px-20 py-4 bg-[#ebff00] text-[#2d3034] rounded-full uppercase text-2xl font-bold hover:bg-white cursor-pointer transition-colors duration-300 ease-in-out"}>
+									className={"h-16 w-auto lg:w-72 px-20 py-4 bg-white rounded-full uppercase text-2xl font-bold hover:bg-secondary cursor-pointer transition-colors duration-300 ease-in-out"}>
 									Aici
 								</button>
 							</div>
@@ -517,30 +468,23 @@ export default function Home() {
 							{/* CONTENT */}
 							<div className={"flex flex-col gap-y-4 leading-5"}>
 								<p>
-									INNKO LLC
+									GoldYes Jewelry School
 								</p>
 								<p>
-									Employer Identification Number: 85-0568972<br />
-									1910 THOMES AVE CHEYENNE, WY 82001
+									str. Melestiu 26/7, Chișinău<br />
+									Republica Moldova
 								</p>
 							</div>
 							{/* CONTENT */}
 							<div className={"flex flex-col gap-y-4 leading-5"}>
 								<Link href={"/"}>
-									info@manifestare.md
-								</Link>
-
-								<Link href={"/"}>
-									+40 31 229 7765
+									+373 69 202 200
 								</Link>
 							</div>
 							{/* CONTENT */}
 							<div className={"flex flex-col gap-y-4 leading-5"}>
-								<Link href={"/"}>
-									Termeni și Condiții Comerciale (FullFillment Policy)
-								</Link>
 								<p>
-									2024 © ALL RIGHTS RESERVED
+									{ new Date().getFullYear() } © ALL RIGHTS RESERVED
 								</p>
 							</div>
 						</div>
