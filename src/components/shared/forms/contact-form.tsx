@@ -22,7 +22,7 @@ export function ContactForm() {
 
 		sendForm(form)
 			.then((res) => {
-				console.log(data);
+				console.log(res.data);
 				setStatus(res.success);
 			});
 
