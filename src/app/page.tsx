@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import Image from "next/image";
+import { ContactForm } from "@/components/shared/forms/contact-form";
 
 export default function Home() {
 	return (
@@ -23,11 +24,13 @@ export default function Home() {
 						</div>
 					</div>
 					<div className={"flex items-center justify-center py-4"}>
-						<div className={"relative shrink-0 w-[138px] h-[112px]"}>
+						<div className={"relative shrink-0 w-[138px] h-[100px]"}>
 							<Image className={"absolute -top-3 left-0 w-auto object-cover h-[112px]"} src={"/assets/gift-hero.png"}
 										 alt={"gift hero"} width={138} height={112}/>
-							<Image className={"relative -left-5 w-auto h-[112px]"} src={"/assets/book-hero.png"}
-										 alt={"book hero"} width={102} height={112}/>
+							<Image className={"absolute -bottom-3 left-0 w-auto object-cover h-[112px] -scale-x-100"} src={"/assets/gift-hero.png"}
+										 alt={"gift hero"} width={138} height={112}/>
+							{/*<Image className={"relative -left-5 w-auto h-[112px]"} src={"/assets/book-hero.png"}
+										 alt={"book hero"} width={102} height={112}/>*/}
 						</div>
 						<div className={"space-y-2"}>
 							<p className={"text-lg font-bold !leading-[1.2] text-balance"}>
@@ -38,15 +41,15 @@ export default function Home() {
 					</div>
 					<div>
 						<div className={"relative flex items-center justify-center"}>
-							<Image className={"absolute top-0 left-0 w-auto h-[215px]"} src={"/assets/confetti-hero.png"}
+							<Image className={"absolute -top-1/2 left-0 w-auto h-[215px] pointer-events-none"} src={"/assets/confetti-hero.png"}
 										 alt={"confetti hero"} width={311} height={215}/>
-							<Image className={"relative w-auto h-[337px]"} src={"/assets/person-hero.png"}
-										 alt={"person hero"} width={215} height={337}/>
+							{/*<Image className={"relative w-auto h-[337px]"} src={"/assets/person.jpg"}
+										 alt={"person hero"} width={215} height={337}/>*/}
 						</div>
-						<button
-							className={"h-16 md:text-xl w-full lg:w-72 py-4 bg-secondary rounded-full uppercase font-bold hover:bg-primary hover:text-white cursor-pointer transition-colors duration-300 ease-in-out"}>
+						<Link href={"#contactForm"}
+							className={"h-16 flex items-center justify-center md:text-xl w-full lg:w-72 py-4 bg-secondary rounded-full uppercase font-bold hover:bg-primary hover:text-white cursor-pointer transition-colors duration-300 ease-in-out"}>
 							Aplică acum
-						</button>
+						</Link>
 					</div>
 				</Container>
 			</section>
@@ -248,7 +251,7 @@ export default function Home() {
 							<div>
 								<div className={"text-center pt-4 px-6"}>
 									<h3 className={"text-2xl md:text-3xl lg:text-4xl font-medium text-white uppercase"}>
-										deveni bijutier profesionist în
+										Devino bijutier profesionist în
 									</h3>
 								</div>
 								<div className={"text-center pt-2 pb-6"}>
@@ -258,10 +261,10 @@ export default function Home() {
 								</div>
 							</div>
 							<div className={"pb-4"}>
-								<button
-									className={"h-16 md:text-xl w-full lg:w-72 py-4 bg-white rounded-full uppercase font-bold hover:bg-secondary cursor-pointer transition-colors duration-300 ease-in-out"}>
-									Investești în viitorul
-								</button>
+								<Link href={"#contactForm"}
+									className={"flex items-center justify-center h-16 md:text-xl w-full lg:w-72 py-4 bg-white rounded-full uppercase font-bold hover:bg-secondary cursor-pointer transition-colors duration-300 ease-in-out"}>
+									Investește în viitorul tău
+								</Link>
 							</div>
 						</div>
 					</Container>
@@ -325,7 +328,7 @@ export default function Home() {
 					<Container>
 						<div>
 							<h3 className={"text-balance font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase text-center"}>
-								Acest curs este pentru tine dacă:
+								Acest curs este pentru tine dacă
 							</h3>
 						</div>
 					</Container>
@@ -344,7 +347,7 @@ export default function Home() {
 								</div>
 								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
 									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
-										Confecționarea bijuteriilor din aur și argint de la zero, cu tehnici profesionale.
+										Vrei o meserie de lux, respectată și bine plătită.
 									</p>
 								</div>
 							</div>
@@ -360,7 +363,7 @@ export default function Home() {
 								</div>
 								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
 									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
-										Realizarea lanțurilor, inelelor, brățărilor și a lacătelor de bijuterii.
+										Cauți o profesie cu cerere reală și stabilitate financiară.
 									</p>
 								</div>
 							</div>
@@ -376,7 +379,7 @@ export default function Home() {
 								</div>
 								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
 									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
-										Utilizarea echipamentelor moderne și a tehnologiilor actuale din domeniu.
+										Îți dorești independență și libertatea de a-ți crea propriul drum.
 									</p>
 								</div>
 							</div>
@@ -392,23 +395,7 @@ export default function Home() {
 								</div>
 								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
 									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
-										Tehnici de fotografiere și promovare a bijuteriilor pentru vânzări online și offline.
-									</p>
-								</div>
-							</div>
-
-							<div className={"flex items-center gap-x-6 group"}>
-								<div className={"shrink-0 relative w-24 h-24 group-even:order-last"}>
-									<div
-										className={"absolute w-10 h-10 -top-3 group-odd:-right-3 group-even:-left-3 rounded-full flex items-center justify-center bg-primary border-4 border-white"}>
-										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>4</span>
-									</div>
-									<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-4.jpg"} alt={"step 4"}
-												 width={100} height={100} />
-								</div>
-								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
-									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
-										Cum să-ți lansezi propriul brand de bijuterii.
+										Ești hotărât să înveți și să aplici abilități practice cu adevărat valoroase.
 									</p>
 								</div>
 							</div>
@@ -436,6 +423,12 @@ export default function Home() {
 				</section>
 			</section>
 
+			<section className={"py-6"}>
+				<Container>
+					<ContactForm/>
+				</Container>
+			</section>
+
 			{/* FOOTER */}
 			<footer>
 				<section className={"relative bg-primary"}>
@@ -452,10 +445,10 @@ export default function Home() {
 								</h5>
 							</div>
 							<div className={"pt-6 pb-20"}>
-								<button
-									className={"h-16 w-auto lg:w-72 px-20 py-4 bg-white rounded-full uppercase text-2xl font-bold hover:bg-secondary cursor-pointer transition-colors duration-300 ease-in-out"}>
+								<Link href={"#contactForm"}
+									className={"flex items-center justify-center h-16 w-auto lg:w-72 px-20 py-4 bg-white rounded-full uppercase text-2xl font-bold hover:bg-secondary cursor-pointer transition-colors duration-300 ease-in-out"}>
 									Aici
-								</button>
+								</Link>
 							</div>
 						</div>
 					</Container>
