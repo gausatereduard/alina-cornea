@@ -16,11 +16,11 @@ export async function sendForm(userData: { name: string; telegram: string; phone
 		.then(response => response.json())
 		.then(data => {
 			console.log("Message sent:", data);
-			return { success: true };
+			return { success: true, data: data };
 		})
 		.catch(error => {
 			console.error("Error sending message:", error);
-			return { success: false };
+			return { success: false, data: error };
 		});
 
 	return { success: false };
