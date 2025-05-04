@@ -36,14 +36,9 @@ export function ContactForm() {
 	return (
 		<form className={"border-2 border-dotted border-primary px-4 py-6 rounded-2xl space-y-4"}
 					onSubmit={handleSubmit}>
-			{/*<div className={"mb-4"}>
-				<h3 className={"text-balance font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase text-center"}>
-					Dezghioc Manifest
-				</h3>
-			</div>*/}
 			<div className={"flex flex-col gap-y-4"}>
 				<div className={"flex flex-col gap-y-1"}>
-					<label className={"text-sm"}>Nume</label>
+				<label className={"text-sm"}>Nume</label>
 					<input className={"h-10 px-4 py-2 border border-gray-200 rounded-md"} name={"name"}
 								 placeholder={"Introduceți numele dvs."} required value={form.name} onChange={handleInputChange} />
 				</div>

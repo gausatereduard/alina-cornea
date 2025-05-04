@@ -2,11 +2,12 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import Image from "next/image";
 import { ContactForm } from "@/components/shared/forms/contact-form";
+import * as React from "react";
 
 export default function Home() {
 	return (
 		<>
-			<section className={"pt-8 pb-8 bg-black text-white/70"}>
+			<section className={"pt-8 pb-8 bg-black text-white/75"}>
 				<Container>
 					<div className={"mb-6"}>
 						<div className={"text-center"}>
@@ -24,15 +25,14 @@ export default function Home() {
 						</div>
 					</div>
 					<div className={"flex items-center justify-center py-4"}>
-						<div className={"relative shrink-0 w-[138px] h-[70px] opacity-70"}>
-							<Image className={"absolute mt-4 top-1/2 -translate-y-1/2 -left-2 w-auto object-cover h-[112px]"}
-										 src={"/assets/gift-hero.png"}
-										 alt={"gift hero"} width={138} height={112} />
-							<Image className={"absolute top-1/2 -translate-y-1/2 left-0 w-auto object-cover h-[112px] -scale-x-100"}
-										 src={"/assets/gift-hero.png"}
-										 alt={"gift hero"} width={138} height={112} />
-							{/*<Image className={"relative -left-5 w-auto h-[112px]"} src={"/assets/book-hero.png"}
-										 alt={"book hero"} width={102} height={112}/>*/}
+						<div className={"relative z-10 shrink-0 w-[138px] h-20"}>
+							{/*<Image className={"absolute top-1/2 -translate-y-1/2 w-auto object-contain -rotate-12 h-16"}
+										 src={"/assets/rings.webp"} alt={"gift hero"} width={138} height={112} />
+							<Image className={"absolute right-4 top-1/2 -translate-y-1/2 w-auto object-contain rotate-12 h-24"}
+										 src={"/assets/rings.webp"} alt={"gift hero"} width={138} height={112} />*/}
+
+							<Image className={"w-auto object-contain h-24"}
+										 src={"/assets/rings.webp"} alt={"gift hero"} width={138} height={112} />
 						</div>
 						<div className={"space-y-2"}>
 							<p className={"text-lg font-bold !leading-[1.2] text-balance"}>
@@ -310,12 +310,13 @@ export default function Home() {
 						</Container>
 					</section>
 					<section className={"pt-8"}>
-						<Container>
-							<div className={"relative flex items-center justify-center"}>
-								<Image className={"h-80 object-cover object-top w-full"}
-											 src={"/assets/person.png"}
-											 alt={"person"} width={216} height={320} />
-								{/*<Image className={"absolute -top-20 -right-4 w-auto"}
+						<div className={"relative flex items-center justify-center"}>
+							<div className={"absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-[#FFDEB3] to-transparent"} />
+							<div className={"absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#FFDEB3] to-transparent"} />
+							<Image className={"h-full object-cover object-top w-full"}
+										 src={"/assets/person-2.jpg"} quality={100}
+										 alt={"person"} width={216} height={320} />
+							{/*<Image className={"absolute -top-20 -right-4 w-auto"}
 											 src={"/assets/confetti-useful.png"}
 											 alt={"confetti useful"} width={259} height={162} />
 								<Image className={"absolute -bottom-12 -right-20 w-auto"}
@@ -324,8 +325,7 @@ export default function Home() {
 								<Image className={"absolute -top-4 -right-4 w-52 h-auto"}
 											 src={"/assets/instagram-mockup.png"}
 											 alt={"instagram mockup"} width={203} height={311} />*/}
-							</div>
-						</Container>
+						</div>
 					</section>
 				</section>
 			</section>
@@ -346,29 +346,39 @@ export default function Home() {
 					<Container>
 						<div className={"flex flex-col lg:flex-row gap-y-4"}>
 							<div className={"w-full flex items-center flex-row lg:flex-col gap-y-2 gap-x-6 group"}>
-								<div className={"shrink-0 relative w-24 h-24 group-even:order-last lg:group-even:order-none"}>
+								<div
+									className={"shrink-0 relative w-24 h-24 flex items-center justify-center bg-primary-tint rounded-xl group-even:order-last sm:group-even:order-none"}>
 									<div
 										className={"absolute w-10 h-10 -top-3 group-odd:-right-3 group-even:-left-3 rounded-full flex items-center justify-center bg-primary border-4 border-white"}>
-										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>1</span>
+										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>3</span>
 									</div>
-									<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-1.jpg"} alt={"step 1"}
-												 width={100} height={100} />
+									<h3 className={"text-5xl"}>
+										🏆
+									</h3>
+									{/*<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-3.jpg"} alt={"step 4"}
+												 width={100} height={100} />*/}
 								</div>
-								<div className={"group-odd:pr-2 lg:group-odd:pr-0 lg:!px-2.5 group-even:pl-2 lg:group-even:pl-0 group-even:order-first lg:group-even:order-none"}>
-									<p className={"text-sm sm:text-base md:text-lg group-even:text-right lg:group-even:text-center lg:text-center"}>
+								<div
+									className={"group-odd:pr-2 lg:group-odd:pr-0 lg:!px-2.5 group-even:pl-2 lg:group-even:pl-0 group-even:order-first lg:group-even:order-none"}>
+									<p
+										className={"text-sm sm:text-base md:text-lg group-even:text-right lg:group-even:text-center lg:text-center"}>
 										Vrei o meserie de lux, respectată și bine plătită.
 									</p>
 								</div>
 							</div>
 
 							<div className={"w-full flex items-center flex-row lg:flex-col gap-y-2 gap-x-6 group"}>
-								<div className={"shrink-0 relative w-24 h-24 group-even:order-last sm:group-even:order-none"}>
+								<div
+									className={"shrink-0 relative w-24 h-24 flex items-center justify-center bg-primary-tint rounded-xl group-even:order-last sm:group-even:order-none"}>
 									<div
 										className={"absolute w-10 h-10 -top-3 group-odd:-right-3 group-even:-left-3 rounded-full flex items-center justify-center bg-primary border-4 border-white"}>
-										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>2</span>
+										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>3</span>
 									</div>
-									<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-2.jpg"} alt={"step 2"}
-												 width={100} height={100} />
+									<h3 className={"text-5xl"}>
+										🔎
+									</h3>
+									{/*<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-3.jpg"} alt={"step 4"}
+												 width={100} height={100} />*/}
 								</div>
 								<div
 									className={"group-odd:pr-2 lg:group-odd:pr-0 lg:!px-2.5 group-even:pl-2 lg:group-even:pl-0 group-even:order-first lg:group-even:order-none"}>
@@ -380,13 +390,17 @@ export default function Home() {
 							</div>
 
 							<div className={"w-full flex items-center flex-row lg:flex-col gap-y-2 gap-x-6 group"}>
-								<div className={"shrink-0 relative w-24 h-24 group-even:order-last sm:group-even:order-none"}>
+								<div
+									className={"shrink-0 relative w-24 h-24 flex items-center justify-center bg-primary-tint rounded-xl group-even:order-last sm:group-even:order-none"}>
 									<div
 										className={"absolute w-10 h-10 -top-3 group-odd:-right-3 group-even:-left-3 rounded-full flex items-center justify-center bg-primary border-4 border-white"}>
 										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>3</span>
 									</div>
-									<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-3.jpg"} alt={"step 3"}
-												 width={100} height={100} />
+									<h3 className={"text-5xl"}>
+										💶
+									</h3>
+									{/*<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-3.jpg"} alt={"step 4"}
+												 width={100} height={100} />*/}
 								</div>
 								<div
 									className={"group-odd:pr-2 lg:group-odd:pr-0 lg:!px-2.5 group-even:pl-2 lg:group-even:pl-0 group-even:order-first lg:group-even:order-none"}>
@@ -398,13 +412,17 @@ export default function Home() {
 							</div>
 
 							<div className={"w-full flex items-center flex-row lg:flex-col gap-y-2 gap-x-6 group"}>
-								<div className={"shrink-0 relative w-24 h-24 group-even:order-last sm:group-even:order-none"}>
+								<div
+									className={"shrink-0 relative w-24 h-24 flex items-center justify-center bg-primary-tint rounded-xl group-even:order-last sm:group-even:order-none"}>
 									<div
 										className={"absolute w-10 h-10 -top-3 group-odd:-right-3 group-even:-left-3 rounded-full flex items-center justify-center bg-primary border-4 border-white"}>
 										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>4</span>
 									</div>
-									<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-4.jpg"} alt={"step 4"}
-												 width={100} height={100} />
+									<h3 className={"text-5xl"}>
+										💪
+									</h3>
+									{/*<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-4.jpg"} alt={"step 4"}
+												 width={100} height={100} />*/}
 								</div>
 								<div
 									className={"group-odd:pr-2 lg:group-odd:pr-0 lg:!px-2.5 group-even:pl-2 lg:group-even:pl-0 group-even:order-first lg:group-even:order-none"}>
@@ -441,6 +459,11 @@ export default function Home() {
 			</section>
 
 			<section className={"py-6"} id={"contactForm"}>
+				<div className={"bg-primary-tint mb-4 py-4"}>
+					<h3 className={"text-center text-3xl uppercase text-[#af1f10] font-semibold"}>
+						AflĂ prețul 👇
+					</h3>
+				</div>
 				<Container>
 					<ContactForm />
 				</Container>

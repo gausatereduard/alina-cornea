@@ -1,5 +1,14 @@
 export default function Page() {
 	return (
-		<p>123</p>
+		<section>
+			{/* Header */}
+			<header></header>
+
+			{/* Hero Section */}
+			<section></section>
+
+			{/*  */}
+			<section></section>
+		</section>
 	);
 }
