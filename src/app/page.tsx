@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/shared/forms/contact-form";
 export default function Home() {
 	return (
 		<>
-			<section className={"pt-8 pb-8 bg-gradient-to-br from-yellow-100 to-red-200"}>
+			<section className={"pt-8 pb-8 bg-black text-white/70"}>
 				<Container>
 					<div className={"mb-6"}>
 						<div className={"text-center"}>
@@ -24,30 +24,33 @@ export default function Home() {
 						</div>
 					</div>
 					<div className={"flex items-center justify-center py-4"}>
-						<div className={"relative shrink-0 w-[138px] h-[100px]"}>
-							<Image className={"absolute -top-3 left-0 w-auto object-cover h-[112px]"} src={"/assets/gift-hero.png"}
-										 alt={"gift hero"} width={138} height={112}/>
-							<Image className={"absolute -bottom-3 left-0 w-auto object-cover h-[112px] -scale-x-100"} src={"/assets/gift-hero.png"}
-										 alt={"gift hero"} width={138} height={112}/>
+						<div className={"relative shrink-0 w-[138px] h-[70px] opacity-70"}>
+							<Image className={"absolute mt-4 top-1/2 -translate-y-1/2 -left-2 w-auto object-cover h-[112px]"}
+										 src={"/assets/gift-hero.png"}
+										 alt={"gift hero"} width={138} height={112} />
+							<Image className={"absolute top-1/2 -translate-y-1/2 left-0 w-auto object-cover h-[112px] -scale-x-100"}
+										 src={"/assets/gift-hero.png"}
+										 alt={"gift hero"} width={138} height={112} />
 							{/*<Image className={"relative -left-5 w-auto h-[112px]"} src={"/assets/book-hero.png"}
 										 alt={"book hero"} width={102} height={112}/>*/}
 						</div>
 						<div className={"space-y-2"}>
 							<p className={"text-lg font-bold !leading-[1.2] text-balance"}>
-								Locuri limitate –<br/>
+								Locuri limitate –<br />
 								aplică acum!
 							</p>
 						</div>
 					</div>
 					<div>
 						<div className={"relative flex items-center justify-center"}>
-							<Image className={"absolute -top-1/2 left-0 w-auto h-[215px] pointer-events-none"} src={"/assets/confetti-hero.png"}
-										 alt={"confetti hero"} width={311} height={215}/>
-							{/*<Image className={"relative w-auto h-[337px]"} src={"/assets/person.jpg"}
-										 alt={"person hero"} width={215} height={337}/>*/}
+							<Image className={"relative w-auto h-[337px]"} src={"/assets/hero-1.jpeg"}
+										 alt={"person hero"} width={215} height={337} />
+							{/*<Image className={"absolute top-0 left-0 w-auto h-[215px] pointer-events-none"}
+										 src={"/assets/confetti-hero.png"}
+										 alt={"confetti hero"} width={311} height={215} />*/}
 						</div>
 						<Link href={"#contactForm"}
-							className={"h-16 flex items-center justify-center md:text-xl w-full lg:w-72 py-4 bg-secondary rounded-full uppercase font-bold hover:bg-primary hover:text-white cursor-pointer transition-colors duration-300 ease-in-out"}>
+									className={"h-16 flex items-center justify-center md:text-xl w-full lg:max-w-96 lg:mx-auto py-4 bg-secondary rounded-full uppercase font-bold hover:bg-primary hover:text-white cursor-pointer transition-colors duration-300 ease-in-out"}>
 							Aplică acum
 						</Link>
 					</div>
@@ -66,10 +69,12 @@ export default function Home() {
 							</div>
 						</Container>
 					</section>
-					<section>
+					<section className={"pt-6"}>
 						<Container>
-							<div className={"relative h-72 flex items-center justify-center"}>
-								<Image className={"absolute top-0 left-0 w-full object-contain h-full"}
+							<div className={"relative flex items-center justify-center"}>
+								<Image className={"h-72 object-cover"} src={"/assets/preview-1.jpeg"} alt={"Preview"} width={364}
+											 height={256} />
+								{/*<Image className={"absolute top-0 left-0 w-full object-contain h-full"}
 											 src={"/assets/money-video.png"}
 											 alt={"cloud video"} width={364} height={256}/>
 								<Image
@@ -85,7 +90,7 @@ export default function Home() {
 									alt={"cloud video"} width={364} height={256}/>
 								<Image className={"absolute top-0 left-0 w-auto object-contain h-full"}
 											 src={"/assets/confetti-video.png"}
-											 alt={"confetti video"} width={364} height={256}/>
+											 alt={"confetti video"} width={364} height={256}/>*/}
 							</div>
 						</Container>
 					</section>
@@ -97,7 +102,7 @@ export default function Home() {
 										<div className={"pt-2 shrink-0"}>
 											<Image className={"w-8 h-8"}
 														 src={"/assets/list-disc-mark.png"}
-														 alt={"list disc mark"} width={32} height={32}/>
+														 alt={"list disc mark"} width={32} height={32} />
 										</div>
 										<p>
 											Pentru că este una dintre cele mai căutate și bine plătite profesii de lux.
@@ -107,30 +112,33 @@ export default function Home() {
 										<div className={"pt-2 shrink-0"}>
 											<Image className={"w-8 h-8"}
 														 src={"/assets/list-disc-mark.png"}
-														 alt={"list disc mark"} width={32} height={32}/>
+														 alt={"list disc mark"} width={32} height={32} />
 										</div>
 										<p>
-											Pentru că bijutierii profesioniști sunt extrem de apreciați și rari pe piața din Moldova și nu numai.
+											Pentru că bijutierii profesioniști sunt extrem de apreciați și rari pe piața din Moldova și nu
+											numai.
 										</p>
 									</li>
 									<li className={"flex items-start space-x-4"}>
 										<div className={"pt-2 shrink-0"}>
 											<Image className={"w-8 h-8"}
 														 src={"/assets/list-disc-mark.png"}
-														 alt={"list disc mark"} width={32} height={32}/>
+														 alt={"list disc mark"} width={32} height={32} />
 										</div>
 										<p>
-											Pentru că poți transforma fiecare creație într-o sursă serioasă de venit, lucrând independent sau colaborând cu branduri de top.
+											Pentru că poți transforma fiecare creație într-o sursă serioasă de venit, lucrând independent sau
+											colaborând cu branduri de top.
 										</p>
 									</li>
 									<li className={"flex items-start space-x-4"}>
 										<div className={"pt-2 shrink-0"}>
 											<Image className={"w-8 h-8"}
 														 src={"/assets/list-disc-mark.png"}
-														 alt={"list disc mark"} width={32} height={32}/>
+														 alt={"list disc mark"} width={32} height={32} />
 										</div>
 										<p>
-											Pentru că poți deveni propriul tău șef, având libertatea să îți construiești atelierul și brandul personal.
+											Pentru că poți deveni propriul tău șef, având libertatea să îți construiești atelierul și brandul
+											personal.
 										</p>
 									</li>
 								</ul>
@@ -147,7 +155,7 @@ export default function Home() {
 								<div className={"h-10 absolute -top-5 left-1/2 -translate-x-1/2 bg-white w-40"}></div>
 								<Image className={"absolute -top-12 left-1/2 -translate-x-1/2 w-20 h-20"}
 											 src={"/assets/heart.png"}
-											 alt={"heart"} width={80} height={80}/>
+											 alt={"heart"} width={80} height={80} />
 								<div className={"space-y-4 pt-3"}>
 									<h3 className={"text-center text-3xl uppercase text-primary"}>
 										De ce GoldYes?
@@ -262,7 +270,7 @@ export default function Home() {
 							</div>
 							<div className={"pb-4"}>
 								<Link href={"#contactForm"}
-									className={"flex items-center justify-center h-16 md:text-xl w-full lg:w-72 py-4 bg-white rounded-full uppercase font-bold hover:bg-secondary cursor-pointer transition-colors duration-300 ease-in-out"}>
+											className={"flex items-center justify-center h-16 md:text-xl w-full py-4 bg-white rounded-full uppercase font-bold hover:bg-secondary cursor-pointer transition-colors duration-300 ease-in-out"}>
 									Investește în viitorul tău
 								</Link>
 							</div>
@@ -301,13 +309,13 @@ export default function Home() {
 							</ul>
 						</Container>
 					</section>
-				{/*	<section className={"pt-16"}>
+					<section className={"pt-8"}>
 						<Container>
-							<div className={"relative h-80 flex items-center justify-center"}>
-								<Image className={"absolute bottom-0 -left-10 object-contain h-auto"}
+							<div className={"relative flex items-center justify-center"}>
+								<Image className={"h-80 object-cover object-top w-full"}
 											 src={"/assets/person.png"}
 											 alt={"person"} width={216} height={320} />
-								<Image className={"absolute -top-20 -right-4 w-auto"}
+								{/*<Image className={"absolute -top-20 -right-4 w-auto"}
 											 src={"/assets/confetti-useful.png"}
 											 alt={"confetti useful"} width={259} height={162} />
 								<Image className={"absolute -bottom-12 -right-20 w-auto"}
@@ -315,10 +323,10 @@ export default function Home() {
 											 alt={"confetti useful"} width={259} height={162} />
 								<Image className={"absolute -top-4 -right-4 w-52 h-auto"}
 											 src={"/assets/instagram-mockup.png"}
-											 alt={"instagram mockup"} width={203} height={311} />
+											 alt={"instagram mockup"} width={203} height={311} />*/}
 							</div>
 						</Container>
-					</section>*/}
+					</section>
 				</section>
 			</section>
 
@@ -327,7 +335,8 @@ export default function Home() {
 				<section className={"pt-16 pb-8"}>
 					<Container>
 						<div>
-							<h3 className={"text-balance font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase text-center"}>
+							<h3
+								className={"text-balance font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase text-center"}>
 								Acest curs este pentru tine dacă
 							</h3>
 						</div>
@@ -335,9 +344,9 @@ export default function Home() {
 				</section>
 				<section className={"py-8 px-4 sm:px-0"}>
 					<Container>
-						<div className={"flex flex-col gap-y-4"}>
-							<div className={"flex items-center gap-x-6 group"}>
-								<div className={"shrink-0 relative w-24 h-24 group-even:order-last"}>
+						<div className={"flex flex-col lg:flex-row gap-y-4"}>
+							<div className={"w-full flex items-center flex-row lg:flex-col gap-y-2 gap-x-6 group"}>
+								<div className={"shrink-0 relative w-24 h-24 group-even:order-last lg:group-even:order-none"}>
 									<div
 										className={"absolute w-10 h-10 -top-3 group-odd:-right-3 group-even:-left-3 rounded-full flex items-center justify-center bg-primary border-4 border-white"}>
 										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>1</span>
@@ -345,15 +354,15 @@ export default function Home() {
 									<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-1.jpg"} alt={"step 1"}
 												 width={100} height={100} />
 								</div>
-								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
-									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
+								<div className={"group-odd:pr-2 lg:group-odd:pr-0 lg:!px-2.5 group-even:pl-2 lg:group-even:pl-0 group-even:order-first lg:group-even:order-none"}>
+									<p className={"text-sm sm:text-base md:text-lg group-even:text-right lg:group-even:text-center lg:text-center"}>
 										Vrei o meserie de lux, respectată și bine plătită.
 									</p>
 								</div>
 							</div>
 
-							<div className={"flex items-center gap-x-6 group"}>
-								<div className={"shrink-0 relative w-24 h-24 group-even:order-last"}>
+							<div className={"w-full flex items-center flex-row lg:flex-col gap-y-2 gap-x-6 group"}>
+								<div className={"shrink-0 relative w-24 h-24 group-even:order-last sm:group-even:order-none"}>
 									<div
 										className={"absolute w-10 h-10 -top-3 group-odd:-right-3 group-even:-left-3 rounded-full flex items-center justify-center bg-primary border-4 border-white"}>
 										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>2</span>
@@ -361,15 +370,17 @@ export default function Home() {
 									<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-2.jpg"} alt={"step 2"}
 												 width={100} height={100} />
 								</div>
-								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
-									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
+								<div
+									className={"group-odd:pr-2 lg:group-odd:pr-0 lg:!px-2.5 group-even:pl-2 lg:group-even:pl-0 group-even:order-first lg:group-even:order-none"}>
+									<p
+										className={"text-sm sm:text-base md:text-lg group-even:text-right lg:group-even:text-center lg:text-center"}>
 										Cauți o profesie cu cerere reală și stabilitate financiară.
 									</p>
 								</div>
 							</div>
 
-							<div className={"flex items-center gap-x-6 group"}>
-								<div className={"shrink-0 relative w-24 h-24 group-even:order-last"}>
+							<div className={"w-full flex items-center flex-row lg:flex-col gap-y-2 gap-x-6 group"}>
+								<div className={"shrink-0 relative w-24 h-24 group-even:order-last sm:group-even:order-none"}>
 									<div
 										className={"absolute w-10 h-10 -top-3 group-odd:-right-3 group-even:-left-3 rounded-full flex items-center justify-center bg-primary border-4 border-white"}>
 										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>3</span>
@@ -377,15 +388,17 @@ export default function Home() {
 									<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-3.jpg"} alt={"step 3"}
 												 width={100} height={100} />
 								</div>
-								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
-									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
+								<div
+									className={"group-odd:pr-2 lg:group-odd:pr-0 lg:!px-2.5 group-even:pl-2 lg:group-even:pl-0 group-even:order-first lg:group-even:order-none"}>
+									<p
+										className={"text-sm sm:text-base md:text-lg group-even:text-right lg:group-even:text-center lg:text-center"}>
 										Îți dorești independență și libertatea de a-ți crea propriul drum.
 									</p>
 								</div>
 							</div>
 
-							<div className={"flex items-center gap-x-6 group"}>
-								<div className={"shrink-0 relative w-24 h-24 group-even:order-last"}>
+							<div className={"w-full flex items-center flex-row lg:flex-col gap-y-2 gap-x-6 group"}>
+								<div className={"shrink-0 relative w-24 h-24 group-even:order-last sm:group-even:order-none"}>
 									<div
 										className={"absolute w-10 h-10 -top-3 group-odd:-right-3 group-even:-left-3 rounded-full flex items-center justify-center bg-primary border-4 border-white"}>
 										<span className={"leading-none text-white font-semibold -top-0.5 relative"}>4</span>
@@ -393,8 +406,10 @@ export default function Home() {
 									<Image className={"w-24 h-24 rounded-xl"} src={"/assets/step-4.jpg"} alt={"step 4"}
 												 width={100} height={100} />
 								</div>
-								<div className={"group-odd:pr-2 group-even:pl-2 group-even:order-first"}>
-									<p className={"text-sm sm:text-base md:text-lg group-even:text-right"}>
+								<div
+									className={"group-odd:pr-2 lg:group-odd:pr-0 lg:!px-2.5 group-even:pl-2 lg:group-even:pl-0 group-even:order-first lg:group-even:order-none"}>
+									<p
+										className={"text-sm sm:text-base md:text-lg group-even:text-right lg:group-even:text-center lg:text-center"}>
 										Ești hotărât să înveți și să aplici abilități practice cu adevărat valoroase.
 									</p>
 								</div>
@@ -402,7 +417,7 @@ export default function Home() {
 						</div>
 					</Container>
 				</section>
-				<section className={"pb-16 pt-8"}>
+				<section className={"pb-8 pt-8"}>
 					<Container>
 						<div className={"flex items-center justify-center gap-2"}>
 							<div className={"shrink-0 w-8 lg:w-10"}>
@@ -410,8 +425,10 @@ export default function Home() {
 											 width={32} height={85} />
 							</div>
 							<div>
-								<p className={"text-sm sm:text-base md:text-lg lg:text-3xl text-center text-balance font-medium uppercase"}>
-									Completează ancheta de mai jos și lasă-ne numărul tău de telefon pentru a primi toate detaliile despre preț și înscriere!
+								<p
+									className={"text-sm sm:text-base md:text-lg lg:text-3xl text-center text-balance font-medium uppercase"}>
+									Completează ancheta de mai jos și lasă-ne numărul tău de telefon pentru a primi toate detaliile despre
+									preț și înscriere!
 								</p>
 							</div>
 							<div className={"shrink-0 w-8 lg:w-10"}>
@@ -423,9 +440,9 @@ export default function Home() {
 				</section>
 			</section>
 
-			<section className={"py-6"}>
+			<section className={"py-6"} id={"contactForm"}>
 				<Container>
-					<ContactForm/>
+					<ContactForm />
 				</Container>
 			</section>
 
@@ -446,7 +463,7 @@ export default function Home() {
 							</div>
 							<div className={"pt-6 pb-20"}>
 								<Link href={"#contactForm"}
-									className={"flex items-center justify-center h-16 w-auto lg:w-72 px-20 py-4 bg-white rounded-full uppercase text-2xl font-bold hover:bg-secondary cursor-pointer transition-colors duration-300 ease-in-out"}>
+											className={"flex items-center justify-center h-16 w-auto lg:w-72 px-20 py-4 bg-white rounded-full uppercase text-2xl font-bold hover:bg-secondary cursor-pointer transition-colors duration-300 ease-in-out"}>
 									Aici
 								</Link>
 							</div>
@@ -477,7 +494,7 @@ export default function Home() {
 							{/* CONTENT */}
 							<div className={"flex flex-col gap-y-4 leading-5"}>
 								<p>
-									{ new Date().getFullYear() } © ALL RIGHTS RESERVED
+									{new Date().getFullYear()} © ALL RIGHTS RESERVED
 								</p>
 							</div>
 						</div>

@@ -1,7 +1,7 @@
 "use server";
 
-export async function sendForm(userData: { name: string; telegram: string; phone: string }) {
-	const message = `Name: ${userData.name}\nPhone: ${userData.phone}\nTelegram: ${userData.telegram}`;
+export async function sendForm(userData: { name: string; age: string; phone: string }) {
+	const message = `Name: ${userData.name}\nPhone: ${userData.phone}\nAge: ${userData.age}`;
 
 	const res = await fetch(`https://api.telegram.org/bot${process.env.BOT_TOKEN}/sendMessage`, {
 		method: "POST",

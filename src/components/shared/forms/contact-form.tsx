@@ -9,7 +9,7 @@ export function ContactForm() {
 	const [form, setForm] = useState({
 		name: "",
 		phone: "",
-		telegram: ""
+		age: ""
 	});
 	const [status, setStatus] = useState<null | boolean>(null);
 
@@ -29,18 +29,19 @@ export function ContactForm() {
 		setForm({
 			name: "",
 			phone: "",
-			telegram: ""
+			age: ""
 		});
 	};
 
 	return (
-		<form id={"contactForm"} className={"border-2 border-dotted border-primary px-4 py-6 space-y-4"} onSubmit={handleSubmit}>
+		<form className={"border-2 border-dotted border-primary px-4 py-6 rounded-2xl space-y-4"}
+					onSubmit={handleSubmit}>
 			{/*<div className={"mb-4"}>
 				<h3 className={"text-balance font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase text-center"}>
 					Dezghioc Manifest
 				</h3>
 			</div>*/}
-			<div className={"flex flex-col gap-y-2"}>
+			<div className={"flex flex-col gap-y-4"}>
 				<div className={"flex flex-col gap-y-1"}>
 					<label className={"text-sm"}>Nume</label>
 					<input className={"h-10 px-4 py-2 border border-gray-200 rounded-md"} name={"name"}
@@ -53,10 +54,10 @@ export function ContactForm() {
 				</div>
 				<div className={"flex flex-col gap-y-1"}>
 					<label className={"text-sm"}>
-						Scrie aici nickname-ul tău din Telegram
+						Câți ani ai?
 					</label>
-					<input className={"h-10 px-4 py-2 border border-gray-200 rounded-md"} name={"telegram"} value={form.telegram}
-								 onChange={handleInputChange} />
+					<input className={"h-10 px-4 py-2 border border-gray-200 rounded-md"} name={"age"} value={form.age}
+								 onChange={handleInputChange} type={"number"} max={99} min={14} />
 				</div>
 			</div>
 			<div className={"flex flex-col gap-2"}>
